@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Business Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f6f8;
+            color:#333;
+        }
+
+        header{
+            background:linear-gradient(120deg,#0072ff,#00c6ff);
+            color:white;
+            padding:20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        header h1{
+            font-size:26px;
+        }
+
+        nav a{
+            color:white;
+            margin-left:20px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            text-decoration:underline;
+        }
+
+        .hero{
+            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+            url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f") center/cover;
+            height:80vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero h2{
+            font-size:42px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:18px;
+            margin-bottom:25px;
+        }
+
+        .hero button{
+            padding:12px 30px;
+            background:#00c6ff;
+            border:none;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        .hero button:hover{
+            background:#0072ff;
+        }
+
+        .section{
+            padding:60px 50px;
+            text-align:center;
+        }
+
+        .section h2{
+            font-size:32px;
+            margin-bottom:40px;
+            color:#0072ff;
+        }
+
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            color:#0072ff;
+        }
+
+        .about{
+            max-width:900px;
+            margin:auto;
+            font-size:18px;
+            line-height:1.6;
+        }
+
+        .contact{
+            max-width:600px;
+            margin:auto;
+        }
+
+        .contact input, .contact textarea{
+            width:100%;
+            padding:12px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        .contact button{
+            width:100%;
+            padding:12px;
+            background:#0072ff;
+            border:none;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        @media(max-width:768px){
+            header{
+                flex-direction:column;
+            }
+            nav{
+                margin-top:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Harsh Katiyar Business Website</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Grow Your Business With Us</h2>
+        <p>We provide professional solutions to help your business grow faster</p>
+        <button>Get Started</button>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Modern, responsive and fast websites for your business.</p>
+        </div>
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>SEO, social media and online marketing solutions.</p>
+        </div>
+        <div class="card">
+            <h3>Branding</h3>
+            <p>Create strong brand identity and professional designs.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>About Us</h2>
+    <div class="about">
+        <p>
+            We are a professional business agency providing high-quality services
+            to help companies achieve their goals. Our focus is on quality,
+            creativity, and client satisfaction.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Contact Us Harsh</h2>
+    <div class="contact">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Business. All Rights Reserved.</p>
+</footer>
+<form
+action="https://formspree.io/f/xxxxxx" method="POST">
+<input type="text" name="name"
+placeholder="name" required>
+<input type="email"
+name="email" placeholder="name"
+required>
+<textarea name="message"
+placeholder="message"></textarea>
+<button type="submit">Send</button>
+</form>
+</body>
+</html>
+
